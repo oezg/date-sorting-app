@@ -1,0 +1,25 @@
+# ClojureScript compilation outputs
+js/
+out/
+resources/public/js/
+
+# Clojure
+.cpcache/
+*.jar
+*.class
+/target/
+/checkouts/
+pom.xml
+pom.xml.asc
+
+# IDE
+.nrepl-port
+.lsp/
+.clj-kondo/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

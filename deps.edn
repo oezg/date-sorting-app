@@ -1,0 +1,14 @@
+{:deps {org.clojure/clojure {:mvn/version "1.11.2"}
+        org.clojure/clojurescript {:mvn/version "1.12.42"}
+        ;; Backend deps
+        clojure.java-time/clojure.java-time {:mvn/version "1.4.3"}
+        org.jsoup/jsoup {:mvn/version "1.21.1"}
+        ring/ring-core {:mvn/version "1.14.2"}
+        ring/ring-jetty-adapter {:mvn/version "1.14.2"}
+        ring/ring-json {:mvn/version "0.5.1"}}
+ 
+ :aliases {:frontend {:main-opts ["-m" "cljs.main"
+                                  "--compile-opts" "dev.cljs.edn"
+                                  "--compile" "app.core"
+                                  "--repl"]}
+           :backend {:main-opts ["-m" "backend.server"]}}}

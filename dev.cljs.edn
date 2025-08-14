@@ -1,0 +1,9 @@
+{:main app.core
+ :output-to "js/main.js"
+ :output-dir "js/out"
+ :asset-path "js/out"
+ :source-map true
+ :optimizations :none
+ :pretty-print true
+ :watch-dirs ["src"]
+ :reload-clj-files #{:cljc :clj}}
