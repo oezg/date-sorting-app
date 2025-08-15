@@ -22,8 +22,6 @@ A full-stack Clojure/ClojureScript application that scrapes search results from 
 - Java 11+
 - Clojure CLI tools - [Installation Instructions](https://clojure.org/guides/install_clojure)
 
-- Node.js and npm
-
 ### Start Backend Server
 
 ```bash
