@@ -14,7 +14,9 @@
 (defn parse-timestamp [timestamp-str]
   (js/Date. timestamp-str))
 
-(defn create-plot [timestamps]
+(defn create-plot
+  "Create a plot showing timestamp vs result index"
+  [timestamps]
   (let [indices (range 1 (inc (count timestamps)))
         dates (map parse-timestamp timestamps)
         trace (clj->js {:x indices
